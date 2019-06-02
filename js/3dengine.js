@@ -17,6 +17,8 @@ var canvas = document.getElementById("renderCanvas"); // Get the canvas element
 
             // Add and manipulate meshes in the scene
             var sphere = BABYLON.MeshBuilder.CreateSphere("sphere", {diameter:2}, scene);
+            var box = BABYLON.MeshBuilder.CreateBox("box", {height: 5, width: 5, depth: 0.5}, scene)
+            var myGround = BABYLON.MeshBuilder.CreateGround("myGround", {width: 6, height: 4, subdivisions: 4}, scene);
 
             return scene;
         };
